@@ -1,0 +1,45 @@
+.search-page {
+    min-height: 100vh;
+    background: #000;
+    /* Or gradient */
+}
+
+.search-container {
+    padding: 100px 6% 40px 6%;
+    /* Top padding for fixed navbar */
+}
+
+.search-container h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #e5e5e5;
+}
+
+.search-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.grid-card {
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.grid-card:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.grid-card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.grid-card p {
+    font-size: 14px;
+    font-weight: 500;
+}
